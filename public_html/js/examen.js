@@ -1,7 +1,7 @@
 var xhttp, carg, text, selecProv, selecPob, pob;
 
 var agenda = [];
-var textCapturatAJAX;
+var textCapturatAJAX;//L'equivalent de text
 var persones = {};
 var persona = [];
 
@@ -62,7 +62,7 @@ function infTXT() {
 
 
 
-//------------------------------- Carregar xml ------------------------------------
+//------------------------------- Carregar XML ------------------------------------
 function loadDocXML() {
     selecProv = document.getElementById("selecProv");//Captura elements de l'índex
     selecPob = document.getElementById("selecPob");//Captura elements de l'índex
@@ -95,10 +95,10 @@ function cargarSelecXML() {
 }
 
 function infXML() {
-    selecPob.innerHTML = "";
+    selecPob.innerHTML = "";//Per evitar que s'afegeixin 'selects'
     var llista = document.getElementById("selecProv");
-    var index = llista.selectedIndex;
-    var opcioSelecc = llista.options[index].value;
+    var index = llista.selectedIndex;//Índex seleccionat
+    var opcioSelecc = llista.options[index].value;//El valor de dins del value
 
     //alert(opcioSelecc.value);//Buscar el valor del value
     //alert(opcioSelecc.text);//Buscar el valor intern del text

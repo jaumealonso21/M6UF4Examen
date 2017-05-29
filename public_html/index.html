@@ -4,32 +4,37 @@
         <title>Examen</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/examen.css">
         <script src="js/examen.js"></script>
     </head>
     <!-- <body onload="loadDocTXT()"> -->
+    <!-- <select id="selec" onchange="inf()"></select>
+        <p id="selecRes"></p> -->
     <!-- <body onload="loadDocXML()"> -->
+    <!-- <select id="selecProv" onchange="inf()"></select>
+        <select id="selecPob"></select> -->
     <!-- <body onload="startDB()"> -->
     <body>
-        <div>Examen</div>
-        <div><!-- Formulari per tractar indexedDB -->
+        <h1>Examen</h1>
+        <div id="content"><!-- Formulari per tractar indexedDB -->
             <h3>Afegir alummes</h3>
-            DNI: <input type="text" id="dni">
-            Nombre: <input type="text" id="nom">
-            Cognom:<input type="text" id="cognom">
-            Correu:<input type="text" id="correu">
+            <span>DNI: </span><input type="text" id="dni">
+            <span>Nombre: </span><input type="text" id="nom">
+            <span>Cognom: </span><input type="text" id="cognom">
+            <span>Correu: </span><input type="text" id="correu">
             <button onclick="addData()">Añadir</button>
             <h3>Borrar</h3>
-            DNI:<input type="text" value="Dni" id="dnie">
+            <span>DNI: </span><input type="text" value="Dni" id="dnie">
             <button onclick="deleteData()">Eliminar Alumne</button>
             <h3>Llistat</h3>
             <button onclick="llistarAlumnes()">Llistar Alumnes</button>
-            <table id="llistaTaula" width="100%"></table>
+            <table id="llistaTaula" class="marques"></table>
             <!-- <button onclick="carregarAlumnes()">Carregar Alumnes</button>
             <table id="taula"></table> -->
             <h3>Cercar Alumnes</h3>
-            DNI:<input type="text" value="nom" id="nomc">
+            <span>DNI: </span><input type="text" value="nom" id="nomc">
             <button onclick="cercarData()">Cercar Alumne</button>
-            <table id="cercaTaula" width="100%"></table>
+            <table id="cercaTaula" class="marques"></table>
         </div>
     </body>
 </html>

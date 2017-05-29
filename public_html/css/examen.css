@@ -1,0 +1,64 @@
+/*----------------------- Escacs -------------------------*/
+
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+div#content {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+h1, p, label {
+    text-align: center;
+    font-family: Verdana;
+}
+h1 {
+    width: 80%;
+    margin: 10% auto 2% auto;
+    padding: 0 10%;
+    color: black;
+    text-shadow: 2px 2px 8px black;
+}
+h3 {
+    width: 50%;
+    margin: 10% auto 2% auto;
+    padding: 0 10%;
+    color: black;
+}
+p.pantalla {
+    margin-top: 0.5em;
+    margin-bottom: 0em;
+    font-size: 2em;
+    color: #006699;
+}
+p.botones {
+    margin-top: 0.8em;
+    margin-bottom: 0em;
+}
+span {
+    font-size: 1.1em;
+    color: #006699;
+}
+button {
+    margin-top: 0.8em;
+    margin-bottom: 0em;
+    border-radius: 2em;
+}
+input {
+    border: none;
+    border-radius: 2em;
+    background-color: #993300;
+    color: white;
+    cursor: pointer;
+}
+input:focus {/*No es veu caixa selecció en Chrome ---Vigila de borrar-----*/
+    outline: 0px;
+}
+table.marques {
+    margin: 2em auto;
+    font-family: Verdana;
+    width: 100%; 
+}
+#escacs { border: 1px solid black;}/*----Vigila de borrar-------------*/
