@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Examen</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/examen.js"></script>
+    </head>
+    <!-- <body onload="loadDocTXT()"> -->
+    <!-- <body onload="loadDocXML()"> -->
+    <!-- <body onload="startDB()"> -->
+    <body>
+        <div>Examen</div>
+        <div><!-- Formulari per tractar indexedDB -->
+            <h3>Afegir alummes</h3>
+            DNI: <input type="text" id="dni">
+            Nombre: <input type="text" id="nom">
+            Cognom:<input type="text" id="cognom">
+            Correu:<input type="text" id="correu">
+            <button onclick="addData()">Añadir</button>
+            <h3>Borrar</h3>
+            DNI:<input type="text" value="Dni" id="dnie">
+            <button onclick="deleteData()">Eliminar Alumne</button>
+            <h3>Llistat</h3>
+            <button onclick="llistarAlumnes()">Llistar Alumnes</button>
+            <table id="llistaTaula" width="100%"></table>
+            <!-- <button onclick="carregarAlumnes()">Carregar Alumnes</button>
+            <table id="taula"></table> -->
+            <h3>Cercar Alumnes</h3>
+            DNI:<input type="text" value="nom" id="nomc">
+            <button onclick="cercarData()">Cercar Alumne</button>
+            <table id="cercaTaula" width="100%"></table>
+        </div>
+    </body>
+</html>
